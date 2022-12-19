@@ -8,19 +8,19 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="flex-wrapper nav-wrapper">
-          <h2>Header Logo</h2>
-          <ul class="nav-links">
-            <li><a href="">link one</a></li>
-            <li><a href="">link two</a></li>
-            <li><a href="">link three</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
     <section class="hero">
+      <header>
+        <nav>
+          <div class="nav-wrapper">
+            <h2>Header Logo</h2>
+            <ul class="nav-links">
+              <li><a href="">link one</a></li>
+              <li><a href="">link two</a></li>
+              <li><a href="">link three</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <div class="flex-wrapper">
         <div class="hero-copy">
           <h1>This website is awesome</h1>
@@ -31,12 +31,10 @@
           </p>
           <button action="">Sign Up</button>
         </div>
-        <div class="img-wrapper">
-          <img
-            src=""
-            alt="currently no image here but I guess I probably need one"
-          />
-        </div>
+        <img
+          src=""
+          alt="currently no image here but I guess I probably need one"
+        />
       </div>
     </section>
     <section class="random-info">
@@ -73,20 +71,28 @@
       </div>
     </section>
     <section class="quote">
-      <blockquote>
-        "Here's a quote from me. Chase your dreams like a dog chasing a
-        squirrel. If you catch them, you get to eat them. But sometimes they
-        fight back. The squirrels, not your dreams. But kinda also your dreams?"
-        <p><strong>-Wayne Gretsky --Michael Scott</strong></p>
-      </blockquote>
+      <div class="flex-wrapper">
+        <blockquote>
+          "Here's a quote from me. Chase your dreams like a dog chasing a
+          squirrel. If you catch them, you get to eat them. But sometimes they
+          fight back. The squirrels, not your dreams. But kinda also your
+          dreams?"
+          <p><strong>-Wayne Gretsky --Michael Scott</strong></p>
+        </blockquote>
+      </div>
     </section>
     <section class="call-to-action">
       <div class="flex-wrapper">
-        <div class="flex-wrapper">
-          <h4>Call to action! Do the thing!</h4>
-          <p>Buy our shit, buy our shit, buy our shit</p>
+        <div class="cta-wrapper">
+          <div class="text-wrapper">
+            <h4>Call to action! Do the thing!</h4>
+            <p>Buy our shit, buy our shit, buy our shit</p>
+          </div>
+
+          <div class="btn-wrapper">
+            <button>Sign Up!</button>
+          </div>
         </div>
-        <button>Sign Up!</button>
       </div>
     </section>
     <footer>

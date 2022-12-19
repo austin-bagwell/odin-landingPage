@@ -1,30 +1,38 @@
+/* TODO getting p to shrink as needed */
+
 /* GLOBAL */
 body {
   margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 button {
+  padding: 0.75em 1.5em 0.75em 1.5em;
+  color: #f9faf8;
   background-color: #3882f6;
+  border: none;
+  border-radius: 5px;
 }
 
 section {
   min-height: 300px;
+  padding: 3rem 13rem 3rem 13rem;
 }
 
 .flex-wrapper {
   display: flex;
-  padding-left: 10em;
-  padding-right: 10em;
+  justify-content: center;
+  align-items: center;
 }
-/* NAV */
 
-nav {
-  background-color: #1f2937;
-  color: #f9faf8;
-}
+/* NAV */
 .nav-wrapper {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 .nav-links {
@@ -55,10 +63,13 @@ nav {
   transform: scale(1.25);
 }
 /* HERO */
-.hero,
-footer {
+.hero {
   background-color: #1f2937;
   color: #f9faf8;
+}
+
+.hero-copy {
+  flex: 1 2 auto;
 }
 
 .hero-copy h1 {
@@ -67,15 +78,44 @@ footer {
   color: #f9faf8;
 }
 
-.img-wrapper {
-  min-height: 25px;
-  min-width: 75px;
-  border: 1px solid whitesmoke;
+.hero img {
+  min-height: 125px;
+  min-width: 175px;
+  background-color: gray;
+  border-radius: 2px;
 }
+
 /* RANDOM-INFO */
+.random-info h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.random-info figure {
+  display: flex;
+  /* flex: 1 1 100px; */
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.random-info figcaption {
+  text-align: center;
+}
+
+.random-info figure img {
+  min-height: 100px;
+  min-width: 100px;
+  border: 3px solid #3882f6;
+  border-radius: 5px;
+}
 
 /* QUOTE */
 .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e5e7eb;
 }
 
@@ -87,7 +127,38 @@ footer {
 }
 /* CALL TO ACTION */
 .call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 70vw;
+  padding: 2rem 5rem 2rem 5rem;
   background-color: #3882f6;
+  border-radius: 5px;
+}
+
+.text-wrapper {
+  color: white;
+}
+
+.call-to-action button {
+  border: 2px solid white;
 }
 
 /* FOOTER */
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}

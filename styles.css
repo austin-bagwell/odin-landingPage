@@ -1,0 +1,93 @@
+/* GLOBAL */
+body {
+  margin: 0;
+}
+
+button {
+  background-color: #3882f6;
+}
+
+section {
+  min-height: 300px;
+}
+
+.flex-wrapper {
+  display: flex;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+/* NAV */
+
+nav {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+.nav-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  padding-left: 2em;
+}
+
+.nav-links:last-child {
+  padding-right: 1em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+.nav-links a:hover {
+  color: #3882f6;
+}
+
+.nav-links li:hover {
+  color: #3882f6;
+  transform: scale(1.25);
+}
+/* HERO */
+.hero,
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.hero-copy h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f9faf8;
+}
+
+.img-wrapper {
+  min-height: 25px;
+  min-width: 75px;
+  border: 1px solid whitesmoke;
+}
+/* RANDOM-INFO */
+
+/* QUOTE */
+.quote {
+  background-color: #e5e7eb;
+}
+
+.quote blockquote {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+/* CALL TO ACTION */
+.call-to-action {
+  background-color: #3882f6;
+}
+
+/* FOOTER */
